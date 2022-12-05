@@ -3,9 +3,7 @@ import { Col, Row} from "react-bootstrap"
 const Page1 = () => {
   return (
     <>
-      <div
-        
-      >
+      <div>
         <h4 className='mt-1 my-2'>Basic Details</h4>
         <Row className='row'>
           <Col className='col-4'>
