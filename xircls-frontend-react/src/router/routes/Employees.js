@@ -20,7 +20,7 @@ const Employees_Routes = [
   {
     path: "/merchant/employees/add_candidate/education_and_work_information/",
     element: <Education />
-  },
+  }
 ]
 
 export default Employees_Routes

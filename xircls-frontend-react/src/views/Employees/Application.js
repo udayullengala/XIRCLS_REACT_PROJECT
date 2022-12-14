@@ -1,16 +1,17 @@
 import React from "react"
 import { Card, CardBody } from "reactstrap"
-import { Col, Row } from "react-bootstrap"
+import {Container, Col, Row } from "react-bootstrap"
 
 const Aplication = () => {
   return (
     <>
+
       <Card>
         <CardBody>
           <h4>Add Candidate</h4>
         </CardBody>
       </Card>
-
+      
       <Card>
       <CardBody>
           <ul className='nav nav-pills' role='tablist'>
@@ -42,7 +43,7 @@ const Aplication = () => {
                 <span className='d-none d-sm-block'>Basic Details</span>
               </a>
             </li>
-
+          
             <li className='nav-item'>
               <a
                 className='nav-link d-flex align-items-center  active'
@@ -79,16 +80,14 @@ const Aplication = () => {
             </li>
           </ul>
           <CardBody>
-                <div class="tab-pane active" id="Basic" aria-labelledby="Permissions-tab" role="tabpanel">
+               
                                 <h4 class="mt-1 my-2">Aplication Details</h4>
 
-                                    <input type="hidden" name="object_id" value=""/>
-                                
-                                    <input type="hidden" name="method" id="method"/>
+                                    
                                     <Row class="row">
 
                                         
-                                    <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                    <Col xl={4} md={6}  class="col-12 mb-1">
                                         <div class="form-group">
                                             <label for="basicInput">Role Description</label>
                                             <select id="Department" name="Department" type="text" placeholder="Title" onchange="pfToggle()" class="form-control">
@@ -134,18 +133,14 @@ const Aplication = () => {
                                                 <option value=" Public Relations"> Public Relations</option>
                                                 <option value=" Data Analyst"> Data Analyst</option>
                                                 <option value=" Machine Learning Engineer">Machine Learning Engineer</option>
-                                              
-                    
-                                                
 
-                                          
                                             </select>
                                         </div>
                                         <span id="Department_val" class="validation_msg"></span>
                                     </Col>
-            
-                                  
-                                    <Col class="col-xl-4 col-md-6 col-12 mb-1">
+   
+                                    <Col xl={4} md={6} class="col-12 mb-1">
+                                   
                                         <div class="form-group">
                                             <label for="basicInput">Role Type</label>
                                             
@@ -155,16 +150,13 @@ const Aplication = () => {
                                                 <option value="Part-Time Employment">Part-TimeEmployment</option>
                                                 <option value="Full-Time Employment">Full-TimeEmployment</option>
                                                 <option value="Partner/Associate">Partner/Associate (for senior professionals only)</option>
-
-                                               
-
-                                            </select>
+                                          </select>
                                         </div>
                                         <span id="Position_val" class="validation_msg"></span>
                                     </Col>
-            
+
+                                    <Col xl={4} md={6} class="col-12 mb-1">
                                     
-                                    <Col class="col-xl-4 col-md-6 col-12 mb-1">
                                         <div class="form-group">
                                             <label for="work_type">Type</label>
                                             <select id="work_type" name="work_type" type="text" placeholder="Type" class="form-control">
@@ -177,11 +169,10 @@ const Aplication = () => {
                                         </div>
                                         <span id="Type_val" class="validation_msg"></span>
                                     </Col>
-                                        </Row>
-                                        </div>
+                                       
+                                    <Col xl={4} md={6} class="col-12 mb-1">
+                                    <br />
                                         <br />
-                                        <Row>
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
                                         <div class="form-group">
                                             <label for="basic_edit_email">Salary Structure</label>
                                             
@@ -198,9 +189,9 @@ const Aplication = () => {
                                         <span id="salary_struct_val" class="validation_msg"></span>
                                     </Col>
 
-                                    
-            
-                                    <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                    <Col xl={4} md={6} class="col-12 mb-1">
+                                    <br />
+                                        <br />
                                         <div class="form-group">
                                             <label for="basicInput">Source</label>
                                             
@@ -223,9 +214,10 @@ const Aplication = () => {
                                         </div>
                                         <span id="source_val" class="validation_msg"></span>
                                     </Col>
-            
-                               
-                                    <Col class="col-xl-4 col-md-6 col-12 mb-1">
+
+                                    <Col xl={4} md={6} class="col-12 mb-1">
+                                    <br />
+                                        <br />
                                         <div class="form-group">
                                             <label for="basicInput">Stage</label>
                                             

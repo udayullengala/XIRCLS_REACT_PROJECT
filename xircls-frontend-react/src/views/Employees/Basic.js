@@ -5,12 +5,13 @@ import { Col, Row } from "react-bootstrap"
 const Basic = () => {
   return (
     <>
+     
       <Card>
         <CardBody>
           <h4>Add Candidate</h4>
         </CardBody>
       </Card>
-
+    
       <Card>
       <CardBody>
           <ul className='nav nav-pills' role='tablist'>
@@ -79,25 +80,23 @@ const Basic = () => {
             </li>
           </ul>
           <CardBody>
-                <div class="tab-pane active" id="Basic" aria-labelledby="Permissions-tab" role="tabpanel">
+                
                                 <h4 class="mt-1 my-2">Basic Details</h4>
 
                                     <input type="hidden" name="object_id" value=""/>
                                 
                                     <input type="hidden" name="method" id="method"/>
+                                    
                                     <Row class="row">
-
-                                        
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                        <Col xl={4} md={6} class="col-12 mb-1">
                                             <div class="form-group">
                                                 <label for="basicInput">First Name</label>
                                                 <input type="text" class="form-control" placeholder="First Name"/>
                                             </div>
                                             <span id="basic_cust_name_val" class="validation_msg"></span>
                                         </Col>
-                
-                                      
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+
+                                        <Col xl={4} md={6} class="col-12 mb-1">
                                             <div class="form-group">
                                                 <label for="Last_Name">Last Name</label>
                 
@@ -105,11 +104,7 @@ const Basic = () => {
                                             </div>
                                             <span id="basic_cust_lastname_val" class="validation_msg"></span>
                                         </Col>
-                
-
-                                        
-
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                        <Col xl={4} md={6} class="col-12 mb-1">
                                             <div class="form-group">
                                                 <label for="basic_edit_email">Email</label>
                                                 <input type="email" class="form-control" placeholder="Email" name="basic_email" id="basic_email"/>
@@ -117,11 +112,11 @@ const Basic = () => {
                                             </div>
                                             
                                         </Col>
-                                        </Row>
-                                        </div>
+                                        
+                                        
+                                        <Col xl={4} md={6} class="col-12 mb-1">
                                         <br />
-                                        <Row>
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                        <br />
                                             <div class="form-group">
                                                 <label for="basicInput">Country Code (Mobile Number)</label>
                                                 
@@ -877,8 +872,9 @@ const Basic = () => {
                                         </Col>
 
                                     
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
-
+                                        <Col xl={4} md={6} class="col-12 mb-1">
+                                        <br />
+                                        <br />
                                             <div class="form-group">
 
                                                 <label for="basicInput">Mobile Number</label>
@@ -887,12 +883,10 @@ const Basic = () => {
                                             </div>
                                             
                                         </Col>
-                                    
-                                    
-                                        
 
-                                 
-                                        <Col class="col-xl-4 col-md-6 col-12">
+                                        <Col xl={4} md={6} class="col-12 mb-1">
+                                        <br />
+                                        <br />
                                             <div class="form-group">
                                                 <label for="basic_linkdin">Linkedin ID</label>
                 
@@ -900,10 +894,12 @@ const Basic = () => {
                                                 <span id="basic_linkdin" class="validation_msg"></span>
                                             </div>
                                         </Col>
-                                        </Row>
+                                        
                                         <br />
-                                        <Row>
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                        
+                                        <Col xl={4} md={6} class="col-12 mb-1">
+                                        <br />
+                                        <br />
                                             <div class="form-group">
                                                 <label for="basicInput">Country Code (Whatsapp Number)</label>
                                                 
@@ -1658,24 +1654,26 @@ const Basic = () => {
                                         </Col>
                                     
                               
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                        <Col xl={4} md={6} class="col-12 mb-1">
+                                        <br />
+                                        <br />
                                             <div class="form-group">
                                              
-                                            
-                                                <label for="basicInput"> Whatsapp Number</label>
+                                            <Row>
+                                                <Col><label for="basicInput"> Whatsapp Number</label></Col>
                                                 <Col class="float-right">
                                                     <input type="checkbox" id="whatsapp_check" onclick="whatsapp_no_same()"/>
                                                     <label>Same as mobile no.</label>
-                                                    </Col>
+                                                    </Col></Row>
                                                 <input type="text" class="form-control" id="basic_id_whatsapp_number" name="basic_whatsapp_number" placeholder="10-digit mobile number" onclick="clearError('basic_mob_no_val_alt')" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" value=""/>
                                             </div>
 
                                             <span id="basic_mob_no_val_alt" class="validation_msg"></span>
                                         </Col>
-                                
 
-                                        
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                        <Col xl={4} md={6} class="col-12 mb-1">
+                                        <br />
+                                        <br />
                                             <div class="form-group">
                                                 <label for="basic_continent">Continent</label>
                                                 <select id="basic_id_continent" name="continent" type="text" placeholder="Title" class="form-control">
@@ -1692,10 +1690,12 @@ const Basic = () => {
                                             </div>
                                             <span id="basic_continent" class="validation_msg"></span>
                                         </Col>
-                                        </Row>
+                                       
                                         <br />
-                                           <Row>
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                           
+                                        <Col xl={4} md={6} class="col-12 mb-1">
+                                        <br />
+                                        <br />
                                             <div class="form-group">
                                                 <label for="basic_country">Country</label>
                                                 <select id="basic_id_country" name="basic_country" type="text" placeholder="Title" class="form-control">
@@ -1707,7 +1707,9 @@ const Basic = () => {
                                             <span id="basic_country_val" class="validation_msg"></span>
                                         </Col>
                                        
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                        <Col xl={4} md={6} class="col-12 mb-1">
+                                        <br />
+                                        <br />
                                             <div class="form-group">
                                                 <label for="basic_state">State</label>
                                                 <select id="basic_id_state" name="basic_state" type="text" placeholder="Title" class="form-control">
@@ -1718,7 +1720,9 @@ const Basic = () => {
                                             <span id="basic_state_val" class="validation_msg"></span>
                                         </Col>
                                         
-                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                        <Col xl={4} md={6} class="col-12 mb-1">
+                                        <br />
+                                        <br />
                                         <div class="form-group">
                                             <label for="basic_state">City</label>
             
@@ -1727,6 +1731,7 @@ const Basic = () => {
                                         <span id="basic_city" class="validation_msg"></span>
                                         </Col>
                                         </Row>
+                                        
                                         <br />
                                         <div class="col-4 mb-1">
                                             

@@ -86,7 +86,7 @@ const Personal = () => {
                                 
                                     <input type="hidden" name="method" id="method"/>
                                     <Row class="row">
-                                    <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                    <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="dob">Date of Birth</label>
                                                                 <div>
@@ -94,10 +94,11 @@ const Personal = () => {
                                                                 </div>
                                                             </div>
                                                             <span id="dob_val" class="validation_msg"></span>
+                                                            <br />
                                                         </Col>
         
                                                         
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="basicInput">Gender</label>
                                                                 <select id="gender" name="gender" type="text" placeholder="Gender" class="form-control" onclick="clearError('Gender_val');">
@@ -108,10 +109,8 @@ const Personal = () => {
                                                             </div>
                                                             <span id="Gender_val" class="validation_msg"></span>
                                                         </Col>
-        
-        
-                                                        
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="basicInput">Marital Status</label>
                                                                 <select id="marital_status" name="marital_status" placeholder="Marital Status" type="text" class="form-control" onclick="clearError('Marital_status_val'); ">
@@ -132,10 +131,9 @@ const Personal = () => {
                                         <br />
                                         <Row>
                                         <hr/><h4>Social Presence </h4>
-                                                    <Row class="row" id="social_presence">
+                                                    
         
-                                                     
-                                                        <Col class="col-lg-4 col-md-6 form-group">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <label for="twitter-input">Twitter</label>
                                                             <div class="input-group input-group-merge">
                                                                 <div class="input-group-prepend">
@@ -151,7 +149,7 @@ const Personal = () => {
                                                         </Col>
         
                                                        
-                                                        <Col class="col-lg-4 col-md-6 form-group">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <label for="facebook_link">Facebook</label>
                                                             <div class="input-group input-group-merge">
                                                                 <div class="input-group-prepend">
@@ -167,7 +165,7 @@ const Personal = () => {
                                                         </Col>
         
                                                         
-                                                        <Col class="col-lg-4 col-md-6 form-group">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <label for="instagram_link">Instagram</label>
                                                             <div class="input-group input-group-merge">
                                                                 <div class="input-group-prepend">
@@ -185,92 +183,98 @@ const Personal = () => {
                                                         </Col>
                                                     </Row>
 
-                                        </Row>
+                                       
                                         <br />
                                        <hr/>
                                                     <h4> Address Details</h4>
                                                     <Row class="row" id="address_details">
-                                                    <Row>
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                    
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label>Flat/Building/House details</label>
                                                                 <input type="text" class="form-control" name="address_flat" id="address_flat" placeholder=""/>
                                                             </div>
                                                             <span id="address_flat_val" class="validation_msg"></span>
+                                                            <br />
                                                         </Col>
         
                                                 
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                       <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label>Street/Lane/Road</label>
                                                                 <input type="text" class=" form-control" name="address_street" id="address_street" placeholder=""/>
                                                             </div>
                                                             <span id="address_street_val" class="validation_msg"></span>
+                                                            <br />
                                                         </Col>
         
                                                 
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label>Area / Locality / Suburb </label>
                                                                 <input type="text" class=" form-control" name="address_area" id="address_area" placeholder="e.g. Bandra" data-autoclose="true"/>
                                                             </div>
                                                             <span id="address_area_val" class="validation_msg"></span>
+                                                            <br />
                                                         </Col>
         
-                                                        </Row>
-                                                        <Row>
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                       
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="basicInput">Landmark</label>
                                                                 <input type="text" class="form-control" id="address_landmark" name="address_landmark" placeholder=""/>
                                                             </div>
                                                             <span id="address_landmark_val" class="validation_msg"></span>
+                                                            <br />
                                                         </Col>
         
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="basicInput">City</label>
                                                                 <input type="text" class="form-control" id="address_city" name="address_city" placeholder=""/>
                                                             </div>
                                                             <span id="address_city_val" class="validation_msg"></span>
+                                                            <br />
                                                         </Col>
         
                                                      
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="basicInput">State / Province / Region</label>
                                                                 <input type="text" class="form-control" id="address_state" name="address_state" placeholder=""/>
                                                             </div>
                                                             <span id="address_state_val" class="validation_msg"></span>
+                                                            <br />
                                                         </Col>
-                                                        </Row>
-                                                        <Row>
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                        
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="basicInput">Country</label>
                                                                 <input type="text" class="form-control" id="address_country" name="address_country" placeholder=""/>
                                                             </div>
                                                             <span id="address_country_val" class="validation_msg"></span>
+                                                            
                                                         </Col>
         
                                                        
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="basicInput">Postal Code</label>
                                                                 <input type="text" class="form-control" id="id_postalcode" name="postalcode" placeholder=""/>
                                                             </div>
                                                             <span id="postalcode_val" class="validation_msg"></span>
+                                                            
                                                         </Col>
         
                                                         
-                                                        <Col class="col-xl-4 col-md-6 col-12 mb-1">
+                                                        <Col xl={4} md={6} class="col-12 mb-1">
                                                             <div class="form-group">
                                                                 <label for="pincode">Pincode</label>
                                                                 <input type="text" class="form-control" id="id_pincode" name="pincode" placeholder=""/>
                                                             </div>
                                                             <span id="pincode_val" class="validation_msg"></span>
                                                         </Col>
-                                                        </Row>
+                                                        
                                                     </Row>
                                         <br />
                                         <Col class="col-12 mt-2">
