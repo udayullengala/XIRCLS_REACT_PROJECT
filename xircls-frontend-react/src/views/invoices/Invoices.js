@@ -1,9 +1,10 @@
 import React from 'react'
 import { Card, CardBody, Button, Table, Badge, Pagination, PaginationItem, PaginationLink } from 'reactstrap'
-import { ChevronDown } from 'react-feather'
+import { ChevronDown, Info } from 'react-feather'
 import Box from '../../assets/images/icons/box.svg'
 import Cart from '../../assets/images/icons/shopping-cart.svg'
 import Rupee from '../../assets/images/icons/rupee.svg'
+
 
 const Invoices = () => {
     return (
@@ -170,7 +171,7 @@ const Invoices = () => {
                                 &#8377;2400
                             </td>
                             <td>
-                                <div class='icon-info'></div><Badge color='danger' pill>Unpaid</Badge>
+                                <Info color='danger'/><Badge color='danger' pill>Unpaid</Badge>
                             </td>
                             <td>
                                 @mdo
