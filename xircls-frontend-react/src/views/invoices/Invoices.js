@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, CardBody, Button, Table, Badge, Pagination, PaginationItem, PaginationLink } from 'reactstrap'
-import { ChevronDown, Info } from 'react-feather'
+import { Card, CardBody, Button, Table, Badge, Pagination, PaginationItem, PaginationLink, Select } from 'reactstrap'
+import { ChevronDown, Info, CheckCircle, Save } from 'react-feather'
 import Box from '../../assets/images/icons/box.svg'
 import Cart from '../../assets/images/icons/shopping-cart.svg'
 import Rupee from '../../assets/images/icons/rupee.svg'
@@ -108,7 +108,7 @@ const Invoices = () => {
             </Card>
 
             <Card>
-                <CardBody responsive style={{display: 'flex', justifyContent: 'center', alignContent: 'center'}}>
+                <CardBody style={{display: 'inline-flex', justifyContent: 'center', alignItems: 'center'}}>
                     <h6>No Orders Today</h6>
                 </CardBody>
             </Card>
@@ -116,16 +116,17 @@ const Invoices = () => {
             <Card>
                 <CardBody>
 
-                    <div id="table-header" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-                        <div style={{display: 'inline-flex'}}>
+                    <div id="table-header" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems:'center', marginBottom: '1rem'}}>
+                        <div style={{display: 'inline-flex', justifyContent: 'center'}}>
                             <p>Show</p>
-                                <select>
+                                <select class='form-select' style={{marginLeft: '2rem', width:'70px'}}>
                                     <option>10</option>
                                     <option>20</option>
                                     <option>30</option>
                                     <option>40</option>
                                     <option>50</option>
-                                </select>
+                            </select>
+                            
                         </div>
                         <div>
                             <h6 style={{justifyContent: 'center'}}>Invoices</h6>
@@ -171,7 +172,7 @@ const Invoices = () => {
                                 &#8377;2400
                             </td>
                             <td>
-                                <Info color='danger'/><Badge color='danger' pill>Unpaid</Badge>
+                                <Info color='#ea5454'/><Badge color='danger' pill>Unpaid</Badge>
                             </td>
                             <td>
                                 @mdo
@@ -191,7 +192,7 @@ const Invoices = () => {
                                 &#8377;2949
                             </td>
                             <td>
-                                <Badge color='success' pill>Paid</Badge>
+                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
                             </td>
                             <td>
                                 @fat
@@ -211,7 +212,7 @@ const Invoices = () => {
                                 &#8377;4720
                             </td>
                             <td>
-                                <Badge color='success' pill>Paid</Badge>
+                                <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
                             </td>
                             <td>
                                 @twitter
@@ -231,7 +232,7 @@ const Invoices = () => {
                                 &#8377;2360
                             </td>
                             <td>
-                                <Badge color='success' pill>Paid</Badge>
+                                <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
                             </td>
                             <td>
                                 @twitter
@@ -251,7 +252,7 @@ const Invoices = () => {
                                 &#8377;41890
                             </td>
                             <td>
-                                <Badge color='success' pill>Paid</Badge>
+                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
                             </td>
                             <td>
                                 @twitter
@@ -271,7 +272,7 @@ const Invoices = () => {
                                 &#8377;3548
                             </td>
                             <td>
-                                <Badge color='primary' pill>Unpaid</Badge>
+                                <Save color='#8d83f2'/><Badge color='primary' pill>Unpaid</Badge>
                             </td>
                             <td>
                                 @twitter
@@ -291,7 +292,7 @@ const Invoices = () => {
                                 &#8377;6020
                             </td>
                             <td>
-                                <Badge color='success' pill>Paid</Badge>
+                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
                             </td>
                             <td>
                                 @twitter
@@ -311,7 +312,7 @@ const Invoices = () => {
                                 &#8377;4407
                             </td>
                             <td>
-                                <Badge color='success' pill>Paid</Badge>
+                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
                             </td>
                             <td>
                                 @twitter
@@ -331,7 +332,7 @@ const Invoices = () => {
                                 &#8377;323
                             </td>
                             <td>
-                                <Badge color='primary' pill>Unpaid</Badge>
+                            <Save color='#8d83f2'/><Badge color='primary' pill>Unpaid</Badge>
                             </td>
                             <td>
                                 @twitter
@@ -351,7 +352,7 @@ const Invoices = () => {
                                 &#8377;17700
                             </td>
                             <td>
-                                <Badge color='success' pill>Paid</Badge>
+                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
                             </td>
                             <td>
                                 @twitter
