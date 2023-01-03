@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "NoirPro-Regular";
+    src: url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.eot");
+    src: url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.svg#NoirPro-Regular") format("svg");
+}
+
+.offercampaign *{
+    font-family: 'NoirPro-Regular', Lato;
+
+}
+.offercampaign .default-dis *{
+    font-family: sans-serif;
+    color: black;
+
+}
+.offercampaign .ql-font-serif{
+    font-family: 'serif' !important;
+
+}
+.offercampaign .ql-font-monospace{
+    font-family: 'monospace' !important;
+
+}
+.offercampaign .ql-size-huge{
+    font-size: 2.5rem !important;
+
+}
+.offercampaign .ql-size-large {
+	font-size: 1.5rem !important;
+}
+.offercampaign .ql-size-small {
+	font-size: 0.75rem !important;
+}
+
+/* .offercampaign .hlt{
+    color : #7367f0;
+    position: relative;
+    text-shadow: 0px 0px 20px #7367f0;
+} */
+
+.offercampaign  .active{
+    color: #7367f0 !important;
+    border-bottom: 3px solid #7367f0;
+    padding-bottom: 0.25rem !important;
+}
+/* .offercampaign .transitionClass{
+    transition: 0.25s ease-in-out !important;
+} */
+.offercampaign .opacity-0{
+    opacity: 0;
+}
+.offercampaign .opacity-100{
+    opacity: 100;
+}
+.offercampaign .transitionRow *{
+    /* transition: 0.375s cubic-bezier(.61,-0.23,.39,1.34) !important; */
+    transition: 0.3s ease !important;
+}
+.offercampaign .w-65{
+    width: 65% !important;
+}
+.offercampaign .table > :not(caption) > * > * {
+	padding: 0.72rem 1rem !important;
+}
+.offercampaign .ql-align-center{
+	text-align: center !important;
+}
+.offercampaign .ql-align-right{
+	text-align: end !important;
+}
+.offercampaign .ql-align-justify{
+	text-align:justify !important;
+}
+.offercampaign .placeholder-list li{
+    cursor: pointer;
+}
+.offercampaign .placeholder-list li::before{
+    content: '-';
+}
+
+
+

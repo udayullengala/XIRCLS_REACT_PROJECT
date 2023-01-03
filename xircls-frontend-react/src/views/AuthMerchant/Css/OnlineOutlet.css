@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Arima:wght@100;200;300;400;500;600;700&family=BIZ+UDPGothic:wght@400;700&family=Battambang:wght@100;300;400;700;900&family=Charis+SIL:ital,wght@0,400;0,700;1,400&family=Finlandica:wght@400;500;600;700&family=Gentium+Plus:wght@400;700&family=Mako&family=Meera+Inimai&family=Orienta&display=swap');
+@import url(//db.onlinewebfonts.com/c/ff194d14f11197a37610711ef9f788ff?family=NoirPro-Regular);
+
+.online-outlet * {
+    /* font-family: 'Alata', sans-serif; */
+
+    /* font-family: 'Arima', cursive; */
+
+    /* font-family: 'Battambang', cursive; */
+
+    /* font-family: 'BIZ UDPGothic', sans-serif; */
+
+    /* font-family: 'Charis SIL', serif; */
+
+    /* font-family: 'Finlandica', sans-serif; */
+
+    /* font-family: 'Gentium Plus', serif; */
+
+    /* font-family: 'Mako', sans-serif; */
+
+    /* font-family: 'Meera Inimai', sans-serif; */
+
+    /* font-family: 'Orienta', sans-serif; */
+
+    font-family: 'NoirPro-Regular', Lato;
+}
+
+.online-outlet .active {
+    color: #7367f0 !important;
+    border-bottom: 3px solid #7367f0;
+    padding-bottom: 0.25rem !important;
+    font-weight: bold;
+}
+
+.online-outlet .css-1s2u09g-control {
+    border: 1px solid #d8d6de !important;
+    cursor: pointer !important;
+}
+
+.online-outlet .css-1s2u09g-control:hover {
+    border: 1px solid #d8d6de !important;
+}
+
+.online-outlet .css-1pahdxg-control {
+    border-color: #7367f0 !important;
+    box-shadow: 0 3px 10px 0 rgba(34, 41, 47, 0.1) !important;
+}
+
+.online-outlet .css-1okebmr-indicatorSeparator {
+    display: none;
+}
+
+.online-outlet .css-tj5bde-Svg {
+    height: 15px !important;
+    color: #d8d6de !important;
+}
+
+.online-outlet .css-qc6sy-singleValue {
+    color: var(--secondary);
+}

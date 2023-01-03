@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "NoirPro-Regular";
+    src: url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.eot");
+    src: url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.svg#NoirPro-Regular") format("svg");
+}
+.outlet_edit *{
+    font-family: "NoirPro-Regular" ;
+}
+
+.outlet_edit .fa-classic, .fa-regular, .fa-solid, .far, .fas {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+
+.outlet_edit .card-button{
+    border-radius: 500px !important;
+    width: 75%;
+    margin: 0 auto;
+    background-color: #7367f0 !important;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+    
+}
+
+.outlet_edit .card-button h5{
+    color: white;
+}
+
+.outlet_edit .card-button:hover{
+    background-color: #5e50ee !important;
+    transition: 0.25s ease;
+}
+
+.outlet_edit #arrowMove{
+    transition: 0.25s ease;
+}
+.outlet_edit .card-button:hover #arrowMove{
+    transform: scaleX(150%) translateX(30%);
+}
+
+.outlet_edit .btn-intrested{
+    color: white !important;
+    background-color: #4889fd !important;
+    border-color: #4889fd !important;
+    margin-right: 1rem;
+    padding: 10px 45px 10px 45px;
+    border: 1px solid #4889fd;
+    border-radius: 0.3rem;  
+}
+
+.outlet_edit .btn-intrested:hover{
+    background-color: #1F75FE !important;
+    border-color: #1F75FE !important;
+    transition-duration: 0.4s;
+}
+
+.outlet_edit .btn-shortlist{
+    color: #787878 !important;
+    background-color: white !important;
+    border-color: #787878 !important;
+    margin-right: 1rem;
+    padding: 10px 45px 10px 45px;
+    border: 1px solid #787878;
+    border-radius: 0.3rem; 
+}
+
+.outlet_edit .btn-shortlist:hover{
+    background-color: #E8E8E8 !important;
+    color: #303030 !important;
+    border-color: #303030 !important;
+}
+

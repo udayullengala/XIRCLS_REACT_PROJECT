@@ -1,0 +1,46 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url(//db.onlinewebfonts.com/c/efd6fa6256a7f7af580365bc68ef3b74?family=Accord); */
+@import url(//db.onlinewebfonts.com/c/ff194d14f11197a37610711ef9f788ff?family=NoirPro-Regular);
+
+
+.merchant>* {
+    font-family: 'NoirPro-Regular', Lato;
+}
+
+.merchant .font-custom-f5 {
+    font-size: 0.85rem;
+}
+
+.merchant .font-custom-f1 {
+    font-size: 1.5rem;
+}
+
+.merchant .font-custom-f3 {
+    font-size: 1.2rem;
+}
+
+.merchant .font-custom-f6 {
+    font-size: 0.85rem;
+}
+
+@media (min-width : 992px) {
+    .merchant .width-change {
+        width: 60%;
+    }
+    
+    .merchant .font-custom-f5 {
+        font-size: 1rem !important;
+    }
+    
+    .merchant .font-custom-f1 {
+        font-size: 2rem;
+    }
+    .merchant .font-custom-f3 {
+        font-size: 1.5rem;
+    }
+    .merchant .font-custom-f6 {
+        font-size: 1rem;
+    }
+}
+

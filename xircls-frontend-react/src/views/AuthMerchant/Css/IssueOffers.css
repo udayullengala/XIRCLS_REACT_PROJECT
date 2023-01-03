@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "NoirPro-Regular";
+    src: url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.eot");
+    src: url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.woff") format("woff"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ff194d14f11197a37610711ef9f788ff.svg#NoirPro-Regular") format("svg");
+}
+
+.issue-offers * {
+    font-family: 'NoirPro-Regular', Lato;
+}
+
+.issue-offers .css-1s2u09g-control {
+    border: 1px solid #d8d6de !important;
+    cursor: pointer !important;
+}
+
+.issue-offers .css-1s2u09g-control:hover {
+    border: 1px solid #d8d6de !important;
+}
+
+.issue-offers .css-1pahdxg-control {
+    border-color: #7367f0 !important;
+    box-shadow: 0 3px 10px 0 rgba(34, 41, 47, 0.1) !important;
+}
+
+.issue-offers .css-1okebmr-indicatorSeparator, .issue-offers  .css-1hb7zxy-IndicatorsContainer {
+    display: none;
+}
+
+.issue-offers .css-tj5bde-Svg {
+    height: 15px !important;
+    color: #d8d6de !important;
+}
+
+.issue-offers .css-qc6sy-singleValue {
+    color: var(--secondary);
+}
+
+.issue-offers .css-2613qy-menu , .issue-offers .css-2613qy-menu * {
+    cursor: pointer !important;
+}
