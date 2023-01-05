@@ -4,6 +4,7 @@ import { ChevronDown, Info, CheckCircle, Save } from 'react-feather'
 import Box from '../../assets/images/icons/box.svg'
 import Cart from '../../assets/images/icons/shopping-cart.svg'
 import Rupee from '../../assets/images/icons/rupee.svg'
+import DataTable from 'react-data-table-component'
 
 
 const Invoices = () => {
@@ -32,7 +33,7 @@ const Invoices = () => {
                             <div class="row" style={{wrap: 'noWrap'}}>
                                 <div class="col-2"><img src={Box}/></div>
                                 <div class="col">
-                                    <h6>&#8377;0.00</h6>
+                                    <h6>₹0.00</h6>
                                     <p>Billing Today</p>
                                 </div>
                             </div>
@@ -48,7 +49,7 @@ const Invoices = () => {
                         </div>
                         <div className='col'>
                         <div class="row" style={{wrap: 'noWrap'}}>
-                            <div class="col-2"><img src={Rupee} style={{height: '30px', alignSelf: 'center'}} /></div>
+                            <div class="col-2"><h1>₹</h1></div>
                                 <div class="col">
                                     <h6>321407.00</h6>
                                     <p>Total Billing</p>
@@ -61,7 +62,7 @@ const Invoices = () => {
                             <div class="row" style={{wrap: 'noWrap'}}>
                                 <div class="col-2"><img src={Box}/></div>
                                 <div class="col">
-                                    <h6>&#8377;0.00</h6>
+                                    <h6>₹0.00</h6>
                                     <p>Earnings Today</p>
                                 </div>
                             </div>
@@ -77,7 +78,7 @@ const Invoices = () => {
                         </div>
                         <div className='col'>
                             <div class="row" style={{wrap: 'noWrap'}}>
-                                <div class="col-2"><img src={Rupee} style={{height: '30px', alignSelf: 'center'}}/></div>
+                                <div class="col-2"><h1>₹</h1></div>
                                 <div class="col">
                                     <h6>8629.00</h6>
                                     <p>Total Unpaid</p>
@@ -113,7 +114,9 @@ const Invoices = () => {
                 </CardBody>
             </Card>
 
-            <Card>
+            <DataTable />
+            
+            {/* <Card>
                 <CardBody>
 
                     <div id="table-header" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems:'center', marginBottom: '1rem'}}>
@@ -361,7 +364,7 @@ const Invoices = () => {
                         </tbody>
                         </Table>
                 </CardBody>
-            </Card>
+            </Card> */}
 
         </div>
     )
