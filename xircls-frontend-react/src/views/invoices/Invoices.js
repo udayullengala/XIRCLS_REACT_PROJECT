@@ -8,6 +8,51 @@ import DataTable from 'react-data-table-component'
 
 
 const Invoices = () => {
+
+    const columns = [
+        {
+            name: 'Invoice Id',
+            selector: row => row.id
+        },
+        {
+            name: 'Invoice Date',
+            selector: row => row.date,
+            sortable: true
+        },
+        {
+            name: 'Customer',
+            selector: row => row.customer,
+            sortable: true
+        },
+        {
+            name: 'Amount',
+            selector: row => row.amount,
+            sortable: true
+        },
+        {
+            name: 'Status',
+            selector: row => row.status,
+            sortable: true
+        },
+        {
+            name: 'Actions',
+            selector: row => row.actions,
+            sortable: true
+        }
+
+    ]
+
+    const data = [
+        {
+            id: 'AA-2023-023',
+            date: '05-12-2022',
+            customer: 'Nasser Hussain',
+            amount: '₹2400',
+            status: 'Unpaid',
+            actions: 'test'
+        }
+    ]
+
     return (
         <div>
             <Card>
@@ -114,7 +159,11 @@ const Invoices = () => {
                 </CardBody>
             </Card>
 
-            <DataTable />
+            <DataTable
+                title='Invoices'
+                columns={columns}
+                data={data}
+            />
             
             {/* <Card>
                 <CardBody>
