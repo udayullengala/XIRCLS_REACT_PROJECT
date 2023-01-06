@@ -42,10 +42,10 @@ const CreateNetwork = (args) => {
                     <CardBody>
                         <Container fluid className="px-0 py-1">
                             <Row className="">
-                                <Col md={12} className='d-flex flex-column justify-content-center align-items-center'>
+                                <Col md={12} className='colbox d-flex flex-column justify-content-center align-items-center'>
                                     <h4>Invite Merchants You Know</h4>
                                     <p>Add your associates as Preferred Partners in your cross-marketing campaigns</p>
-                                    <div style={{ width: '35%' }} className='position-relative mb-2'>
+                                    <div style={{ width: '35%' }} className='inputbox position-relative mb-2'>
                                         <input className="form-control" type='text' placeholder="Enter Email Id" value={merchantEmail} onChange={event => changeMerchantEmail(event)} />
                                         {err1 && <span className={`text-danger`}>Please enter an email first</span>}
                                         {err2 && <span className={`text-danger`}>Invalid email address</span>}

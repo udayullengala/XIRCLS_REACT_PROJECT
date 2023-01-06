@@ -57,7 +57,7 @@ const IssueOffers = () => {
                                 </Col>
                             </Row>
                             <Row className='mt-3'>
-                                <Col md={12} className='d-flex justify-content-between'>
+                                <Col md={12} className='btnbox d-flex justify-content-between'>
                                     <div>
                                         <button className='btn btn-primary'>Back</button>
                                     </div>

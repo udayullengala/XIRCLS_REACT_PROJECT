@@ -17,7 +17,7 @@ const IssueOffers = () => {
                     <CardBody>
                         <Container>
                             <h4 className="mb-2">Issue Offer To Customer</h4>
-                            <Row className="border pt-2 px-2 mb-2">
+                            <Row className="rowbox border pt-2 px-1 mb-2">
                                 <h5 className="fs-4 mb-2">Customer Address Details</h5>
                                 <Col className="mb-3" md={4}>
                                     <label>

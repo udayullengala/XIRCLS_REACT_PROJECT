@@ -16,3 +16,10 @@
     color: #5e50ee !important;
     font-weight: 500;
 }
+@media (min-width : 300px) and (max-width: 767px) {
+.inputbox {
+   
+min-width: 200px;
+}
+
+}

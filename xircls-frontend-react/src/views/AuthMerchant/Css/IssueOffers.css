@@ -38,3 +38,42 @@
 .issue-offers .css-2613qy-menu , .issue-offers .css-2613qy-menu * {
     cursor: pointer !important;
 }
+@media (min-width : 380px) and (max-width: 576px) {
+    .container{
+        
+    margin: 0 auto;
+    min-width: 300px;
+    }
+.container h4{
+    display: flex;
+    margin: 0 auto;
+    min-width: 300px;
+}
+}
+@media (min-width : 300px) and (max-width: 380px) {
+    .container{
+        
+    margin: 0 auto;
+    min-width: 200px;
+    }
+.container h4{
+    display: flex;
+    margin: 0 auto;
+    min-width: 200px;
+}
+.btnbox{
+   margin-left: -40px;
+}
+.btnbox button{
+    margin: 0 5px;
+    padding: 10px 15px;
+}
+.rowbox{
+    min-width: 250px;
+    margin-left: -45px;
+}
+.container h5{
+    margin: 0 auto;
+    min-width: 250px;
+}
+}
