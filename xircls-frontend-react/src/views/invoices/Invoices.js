@@ -1,18 +1,55 @@
 import React from 'react'
-import { Card, CardBody, Button, Table, Badge, Pagination, PaginationItem, PaginationLink, Select } from 'reactstrap'
+import { Card, CardBody, Button, Badge } from 'reactstrap'
 import { ChevronDown, Info, CheckCircle, Save } from 'react-feather'
 import Box from '../../assets/images/icons/box.svg'
 import Cart from '../../assets/images/icons/shopping-cart.svg'
 import Rupee from '../../assets/images/icons/rupee.svg'
 import DataTable from 'react-data-table-component'
 
+const Customer = (props) => {
+    return (
+        <div className='customer-container'>
+            <h6 className='initials'>{props.initials}</h6>{' '}
+            <h6>{props.name}</h6>
+            <small className='text-muted'>{props.email}</small>
+        </div>
+    )
+}
 
 const Invoices = () => {
+
+    const UnpaidAlt = () => {
+        return (
+            <>
+                <Save color='#877ef2' className='unpaid-alt-icon'/>
+                <Badge color='' pill className='unpaid-alt'>Unpaid</Badge>
+            </>
+        )
+    }
+
+    const Unpaid = () => {
+        return (
+            <>
+                <Info color='#ea5454' className='unpaid-icon'/>
+                <Badge color='' pill className='unpaid'>Unpaid</Badge>
+            </>
+        )
+    }
+
+    const Paid = () => {
+        return (
+            <>
+                <CheckCircle color='#81dca9' className='paid-icon'/>
+                <Badge color='' pill className='paid'>Paid</Badge>
+            </>
+        )
+    }
 
     const columns = [
         {
             name: 'Invoice Id',
-            selector: row => row.id
+            selector: row => row.id,
+            sortable: true
         },
         {
             name: 'Invoice Date',
@@ -31,13 +68,11 @@ const Invoices = () => {
         },
         {
             name: 'Status',
-            selector: row => row.status,
-            sortable: true
+            selector: row => row.status
         },
         {
             name: 'Actions',
-            selector: row => row.actions,
-            sortable: true
+            selector: row => row.actions
         }
 
     ]
@@ -46,9 +81,85 @@ const Invoices = () => {
         {
             id: 'AA-2023-023',
             date: '05-12-2022',
-            customer: 'Nasser Hussain',
+            customer: <Customer
+                initials='NH'
+                name='Nasser Hussain'
+                email='nasser.hussain@rugbyindia.in'
+            />,
             amount: '₹2400',
-            status: 'Unpaid',
+            status: <Unpaid />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-022',
+            date: '09-11-2022',
+            customer: 'Rajesh Ghela',
+            amount: '₹2949',
+            status: <Paid />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-021',
+            date: '09-11-2022',
+            customer: 'Nilesh Karnani',
+            amount: '₹4720',
+            status: <Paid />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-020',
+            date: '09-11-2022',
+            customer: 'Nikhil Chib',
+            amount: '₹2360',
+            status: <Paid />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-019',
+            date: '04-11-2022',
+            customer: 'Reshma Shelar',
+            amount: '₹41890',
+            status: <Paid />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-018',
+            date: '14-10-2022',
+            customer: 'Paras Batra',
+            amount: '₹3548',
+            status: <UnpaidAlt />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-017',
+            date: '11-10-2022',
+            customer: 'Nasser Hussain',
+            amount: '₹6020',
+            status: <Paid />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-016',
+            date: '17-10-2022',
+            customer: 'Manasi Sheth',
+            amount: '₹4407',
+            status: <Paid />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-015',
+            date: '14-10-2022',
+            customer: 'Ankit Mittal',
+            amount: '₹323',
+            status: <UnpaidAlt />,
+            actions: 'test'
+        }, 
+        {
+            id: 'AA-2023-014',
+            date: '18-09-2022',
+            customer: 'Chaitanya Sinh',
+            amount: '₹17700',
+            status: <Paid />,
             actions: 'test'
         }
     ]
@@ -143,7 +254,6 @@ const Invoices = () => {
                 </CardBody>
             </Card>
 
-
             <Card>
                 <CardBody style={{ display: 'flex', justifyContent: 'space-between', alignContent: 'center'}}>
 
@@ -159,7 +269,8 @@ const Invoices = () => {
                 </CardBody>
             </Card>
 
-            <DataTable
+
+            <DataTable className='responsive'
                 title='Invoices'
                 columns={columns}
                 data={data}

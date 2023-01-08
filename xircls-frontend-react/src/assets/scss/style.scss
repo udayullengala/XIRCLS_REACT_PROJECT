@@ -9,3 +9,58 @@ NOTE:
 ------
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.unpaid-icon {
+	padding: 6px;
+	margin-right: 4px;
+	background-color: #fdebeb;
+	border-radius: 50px;
+}
+
+.unpaid-alt-icon {
+	padding: 6px;
+	margin-right: 4px;
+	background-color: #efecff;
+	border-radius: 50px;
+
+}
+
+.unpaid-alt {
+	color: #7d72f0;
+	background-color: #efecff;
+}
+
+.paid-icon {
+	padding: 6px;
+	margin-right: 4px;
+	background-color: #e4f8ec;
+	border-radius: 50px;
+}
+
+.unpaid {
+	color: #ec6a6a;
+	background-color: #fdebea;
+}
+
+.paid {
+	color: #4ed087;
+	background-color: #e3f8ed;
+}
+
+.initials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8rem;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	color: #7c71f0;
+	background-color: #efecfe;
+	float: left;
+	margin-right: 5px;
+}
+
+.text-muted {
+	padding-top: 0px;
+}
