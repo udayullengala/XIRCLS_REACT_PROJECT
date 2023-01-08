@@ -6,6 +6,14 @@ import Cart from '../../assets/images/icons/shopping-cart.svg'
 import Rupee from '../../assets/images/icons/rupee.svg'
 import DataTable from 'react-data-table-component'
 
+// create a component for actions column
+// create show text and select input 
+// create view all button
+// create text input for search invoice
+// add filter icon
+
+const Invoices = () => {
+
 const Customer = (props) => {
     return (
         <div className='customer-container'>
@@ -15,9 +23,7 @@ const Customer = (props) => {
         </div>
     )
 }
-
-const Invoices = () => {
-
+    
     const UnpaidAlt = () => {
         return (
             <>
@@ -59,7 +65,8 @@ const Invoices = () => {
         {
             name: 'Customer',
             selector: row => row.customer,
-            sortable: true
+            sortable: true,
+            grow: 3
         },
         {
             name: 'Amount',
@@ -93,7 +100,11 @@ const Invoices = () => {
         {
             id: 'AA-2023-022',
             date: '09-11-2022',
-            customer: 'Rajesh Ghela',
+            customer: <Customer
+                initials='RH'
+                name='Rajesh Ghela'
+                email='collabortion@dynamocks.com'
+            />,
             amount: '₹2949',
             status: <Paid />,
             actions: 'test'
@@ -101,7 +112,11 @@ const Invoices = () => {
         {
             id: 'AA-2023-021',
             date: '09-11-2022',
-            customer: 'Nilesh Karnani',
+            customer: <Customer
+                initials='NK'
+                name='Nilesh Karnani'
+                email='hello@beyours.in'
+            />,
             amount: '₹4720',
             status: <Paid />,
             actions: 'test'
@@ -109,7 +124,11 @@ const Invoices = () => {
         {
             id: 'AA-2023-020',
             date: '09-11-2022',
-            customer: 'Nikhil Chib',
+            customer: <Customer
+                initials='NC'
+                name='Nikhil Chib'
+                email='nikhilchib@gmail.com'
+            />,
             amount: '₹2360',
             status: <Paid />,
             actions: 'test'
@@ -117,7 +136,11 @@ const Invoices = () => {
         {
             id: 'AA-2023-019',
             date: '04-11-2022',
-            customer: 'Reshma Shelar',
+            customer: <Customer
+                initials='RS'
+                name='Reshma Shelar'
+                email='reshma@perlingobal.com'
+            />,
             amount: '₹41890',
             status: <Paid />,
             actions: 'test'
@@ -125,7 +148,10 @@ const Invoices = () => {
         {
             id: 'AA-2023-018',
             date: '14-10-2022',
-            customer: 'Paras Batra',
+            customer: <Customer
+                initials='PB'
+                name='Paras Batra'
+                email='paras@leafstudios.com'/>,
             amount: '₹3548',
             status: <UnpaidAlt />,
             actions: 'test'
@@ -133,7 +159,11 @@ const Invoices = () => {
         {
             id: 'AA-2023-017',
             date: '11-10-2022',
-            customer: 'Nasser Hussain',
+            customer: <Customer
+                initials='NH'
+                name='Nasser Hussain'
+                email='nasser.hussain@rugbyindia.in'
+            />,
             amount: '₹6020',
             status: <Paid />,
             actions: 'test'
@@ -141,7 +171,10 @@ const Invoices = () => {
         {
             id: 'AA-2023-016',
             date: '17-10-2022',
-            customer: 'Manasi Sheth',
+            customer: <Customer
+                initials='MS'
+                name='Manasi Sheth'
+                email='manasi@injawellness.com'/>,
             amount: '₹4407',
             status: <Paid />,
             actions: 'test'
@@ -149,7 +182,10 @@ const Invoices = () => {
         {
             id: 'AA-2023-015',
             date: '14-10-2022',
-            customer: 'Ankit Mittal',
+            customer: <Customer
+                initials='AM'
+                name='Ankit Mittal'
+                email='ankit.mittal@beardo.in'/>,
             amount: '₹323',
             status: <UnpaidAlt />,
             actions: 'test'
@@ -157,7 +193,10 @@ const Invoices = () => {
         {
             id: 'AA-2023-014',
             date: '18-09-2022',
-            customer: 'Chaitanya Sinh',
+            customer: <Customer
+                initials='CS'
+                name='Chaitanya Sinh'
+                email='chait.sinh@alaconcierge.com'/>,
             amount: '₹17700',
             status: <Paid />,
             actions: 'test'
@@ -175,76 +214,76 @@ const Invoices = () => {
             <Card>
                 
                 <CardBody>
-                    <div class="row">
+                    <div className="row">
                         <div className='col'>
-                            <div class="row" style={{wrap: 'noWrap'}}>
-                                <div class="col-2"><img src={Cart}/></div>
-                                <div class="col">
+                            <div className="row" style={{wrap: 'noWrap'}}>
+                                <div className="col-2"><img src={Cart}/></div>
+                                <div className="col">
                                     <h6>0</h6>
                                     <p>Orders Today</p>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
-                            <div class="row" style={{wrap: 'noWrap'}}>
-                                <div class="col-2"><img src={Box}/></div>
-                                <div class="col">
+                            <div className="row" style={{wrap: 'noWrap'}}>
+                                <div className="col-2"><img src={Box}/></div>
+                                <div className="col">
                                     <h6>₹0.00</h6>
                                     <p>Billing Today</p>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
-                            <div class="row" style={{wrap: 'noWrap'}}>
-                                <div class="col-2"><img src={Cart}/></div>
-                                <div class="col">
+                            <div className="row" style={{wrap: 'noWrap'}}>
+                                <div className="col-2"><img src={Cart}/></div>
+                                <div className="col">
                                     <h6>28</h6>
                                     <p>All Orders</p>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
-                        <div class="row" style={{wrap: 'noWrap'}}>
-                            <div class="col-2"><h1>₹</h1></div>
-                                <div class="col">
+                        <div className="row" style={{wrap: 'noWrap'}}>
+                            <div className="col-2"><h1>₹</h1></div>
+                                <div className="col">
                                     <h6>321407.00</h6>
                                     <p>Total Billing</p>
                                 </div>
                         </div>
                         </div>
                     </div>
-                    <div class="row mt-2">
+                    <div className="row mt-2">
                         <div className='col'>
-                            <div class="row" style={{wrap: 'noWrap'}}>
-                                <div class="col-2"><img src={Box}/></div>
-                                <div class="col">
+                            <div className="row" style={{wrap: 'noWrap'}}>
+                                <div className="col-2"><img src={Box}/></div>
+                                <div className="col">
                                     <h6>₹0.00</h6>
                                     <p>Earnings Today</p>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
-                            <div class="row" style={{wrap: 'noWrap'}}>
-                                <div class="col-2"><img src={Cart}/></div>
-                                <div class="col">
+                            <div className="row" style={{wrap: 'noWrap'}}>
+                                <div className="col-2"><img src={Cart}/></div>
+                                <div className="col">
                                     <h6>312778.00</h6>
                                     <p>Total Earnings</p>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
-                            <div class="row" style={{wrap: 'noWrap'}}>
-                                <div class="col-2"><h1>₹</h1></div>
-                                <div class="col">
+                            <div className="row" style={{wrap: 'noWrap'}}>
+                                <div className="col-2"><h1>₹</h1></div>
+                                <div className="col">
                                     <h6>8629.00</h6>
                                     <p>Total Unpaid</p>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
-                            <div class="row" style={{wrap: 'noWrap', display: 'none'}}>
-                                <div class="col-2"><img src={Rupee} style={{height: '30px', alignSelf: 'center'}}/></div>
-                                <div class="col">
+                            <div className="row" style={{wrap: 'noWrap', display: 'none'}}>
+                                <div className="col-2"><img src={Rupee} style={{height: '30px', alignSelf: 'center'}}/></div>
+                                <div className="col">
                                     <h6>8629.00</h6>
                                     <p>Total Unpaid</p>
                                 </div>
@@ -270,7 +309,9 @@ const Invoices = () => {
             </Card>
 
 
-            <DataTable className='responsive'
+            <DataTable 
+                responsive
+                pagination
                 title='Invoices'
                 columns={columns}
                 data={data}
