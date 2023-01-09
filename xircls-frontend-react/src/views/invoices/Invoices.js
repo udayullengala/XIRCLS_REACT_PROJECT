@@ -1,8 +1,6 @@
 import React from 'react'
 import { Card, CardBody, Button, Badge } from 'reactstrap'
 import { ChevronDown, Info, CheckCircle, Save, Settings, ShoppingCart, Box } from 'react-feather'
-import Cart from '../../assets/images/icons/shopping-cart.svg'
-import Rupee from '../../assets/images/icons/rupee.svg'
 import DataTable from 'react-data-table-component'
 
 // create a component for actions column
@@ -227,7 +225,7 @@ const Customer = (props) => {
                     <div className="row">
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><ShoppingCart size={25}  color='#877ef2' className='metrics-icons'/></div>
+                                <div className="col-2"><ShoppingCart size={25} color='#877ef2' style={{backgroundColor: '#efecfe'}} className='metrics-icons'/></div>
                                 <div className="col">
                                     <h6>0</h6>
                                     <small className='text-muted metrics-subhead'>Orders Today</small>
@@ -236,7 +234,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><Box size={25} color='#e95355' className='metrics-icons'/></div>
+                                <div className="col-2"><Box size={25} color='#e95355' className='metrics-icons' style={{backgroundColor: '#fdebeb'}}/></div>
                                 <div className="col">
                                     <h6>₹0.00</h6>
                                     <small className='text-muted metrics-subhead'>Billing Today</small>
@@ -245,7 +243,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><ShoppingCart size={25} color='#27c66f' className='metrics-icons'/></div>
+                                <div className="col-2"><ShoppingCart style={{backgroundColor: '#e4f7ed'}} size={25} color='#27c66f' className='metrics-icons'/></div>
                                 <div className="col">
                                     <h6>28</h6>
                                     <small className='text-muted metrics-subhead'>All Orders</small>
@@ -254,7 +252,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                         <div className="row" style={{wrap: 'noWrap'}}>
-                            <div className="col-2"><h1 className='rupee-symbol metrics-icons'>₹</h1></div>
+                            <div className="col-2"><h1 className='rupee-symbol metrics-icons' style={{backgroundColor: '#fff3e7'}}>₹</h1></div>
                                 <div className="col">
                                     <h6>321407.00</h6>
                                     <small className='text-muted metrics-subhead'>Total Billing</small>
@@ -265,7 +263,7 @@ const Customer = (props) => {
                     <div className="row mt-2">
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><Box size={25} color='#e95355' className='metrics-icons'/></div>
+                                <div className="col-2"><Box size={25} color='#e95355' className='metrics-icons' style={{backgroundColor: '#fdebeb'}}/></div>
                                 <div className="col">
                                     <h6>₹0.00</h6>
                                     <small className='text-muted metrics-subhead'>Earnings Today</small>
@@ -274,7 +272,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><ShoppingCart size={25} color='#27c66f' className='metrics-icons'/></div>
+                                <div className="col-2"><ShoppingCart style={{backgroundColor: '#e4f7ed'}} size={25} color='#27c66f' className='metrics-icons'/></div>
                                 <div className="col">
                                     <h6>312778.00</h6>
                                     <small className='text-muted metrics-subhead'>Total Earnings</small>
@@ -283,7 +281,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><h1 className='rupee-symbol metrics-icons'>₹</h1></div>
+                            <div className="col-2"><h1 className='rupee-symbol metrics-icons' style={{backgroundColor: '#fff3e7'}}>₹</h1></div>
                                 <div className="col">
                                     <h6>8629.00</h6>
                                     <small className='text-muted metrics-subhead'>Total Unpaid</small>
@@ -292,7 +290,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap', display: 'none'}}>
-                                <div className="col-2"><h1 className='rupee-symbol metrics-icons'>₹</h1></div>
+                                <div className="col-2"><h1 style={{backgroundColor: '#fff3e7'}} className='rupee-symbol metrics-icons'>₹</h1></div>
                                 <div className="col">
                                     <h6>8629.00</h6>
                                     <small className='text-muted metrics-subhead'>Total Unpaid</small>
