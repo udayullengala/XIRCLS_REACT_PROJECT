@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card, CardBody, Button, Badge } from 'reactstrap'
-import { ChevronDown, Info, CheckCircle, Save } from 'react-feather'
-import Box from '../../assets/images/icons/box.svg'
+import { ChevronDown, Info, CheckCircle, Save, Settings, ShoppingCart, Box } from 'react-feather'
 import Cart from '../../assets/images/icons/shopping-cart.svg'
 import Rupee from '../../assets/images/icons/rupee.svg'
 import DataTable from 'react-data-table-component'
@@ -13,6 +12,14 @@ import DataTable from 'react-data-table-component'
 // add filter icon
 
 const Invoices = () => {
+
+    const Actions = () => {
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+}
 
 const Customer = (props) => {
     return (
@@ -208,7 +215,10 @@ const Customer = (props) => {
             <Card>
                 <CardBody style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                     <h6>Invoices Dashboard</h6>
-                    <Button color='primary'>Add Invoice</Button>
+                    <Button className='add-invoice' color='primary'>Add Invoice</Button>
+                    <a href="#">
+                        <Settings color='#877ef2' className='settings-icon'/>
+                    </a>
                 </CardBody>
             </Card>
             <Card>
@@ -217,37 +227,37 @@ const Customer = (props) => {
                     <div className="row">
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><img src={Cart}/></div>
+                                <div className="col-2"><ShoppingCart size={25}  color='#877ef2' className='metrics-icons'/></div>
                                 <div className="col">
                                     <h6>0</h6>
-                                    <p>Orders Today</p>
+                                    <small className='text-muted metrics-subhead'>Orders Today</small>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><img src={Box}/></div>
+                                <div className="col-2"><Box size={25} color='#e95355' className='metrics-icons'/></div>
                                 <div className="col">
                                     <h6>₹0.00</h6>
-                                    <p>Billing Today</p>
+                                    <small className='text-muted metrics-subhead'>Billing Today</small>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><img src={Cart}/></div>
+                                <div className="col-2"><ShoppingCart size={25} color='#27c66f' className='metrics-icons'/></div>
                                 <div className="col">
                                     <h6>28</h6>
-                                    <p>All Orders</p>
+                                    <small className='text-muted metrics-subhead'>All Orders</small>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
                         <div className="row" style={{wrap: 'noWrap'}}>
-                            <div className="col-2"><h1>₹</h1></div>
+                            <div className="col-2"><h1 className='rupee-symbol metrics-icons'>₹</h1></div>
                                 <div className="col">
                                     <h6>321407.00</h6>
-                                    <p>Total Billing</p>
+                                    <small className='text-muted metrics-subhead'>Total Billing</small>
                                 </div>
                         </div>
                         </div>
@@ -255,37 +265,37 @@ const Customer = (props) => {
                     <div className="row mt-2">
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><img src={Box}/></div>
+                                <div className="col-2"><Box size={25} color='#e95355' className='metrics-icons'/></div>
                                 <div className="col">
                                     <h6>₹0.00</h6>
-                                    <p>Earnings Today</p>
+                                    <small className='text-muted metrics-subhead'>Earnings Today</small>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><img src={Cart}/></div>
+                                <div className="col-2"><ShoppingCart size={25} color='#27c66f' className='metrics-icons'/></div>
                                 <div className="col">
                                     <h6>312778.00</h6>
-                                    <p>Total Earnings</p>
+                                    <small className='text-muted metrics-subhead'>Total Earnings</small>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><h1>₹</h1></div>
+                                <div className="col-2"><h1 className='rupee-symbol metrics-icons'>₹</h1></div>
                                 <div className="col">
                                     <h6>8629.00</h6>
-                                    <p>Total Unpaid</p>
+                                    <small className='text-muted metrics-subhead'>Total Unpaid</small>
                                 </div>
                             </div>
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap', display: 'none'}}>
-                                <div className="col-2"><img src={Rupee} style={{height: '30px', alignSelf: 'center'}}/></div>
+                                <div className="col-2"><h1 className='rupee-symbol metrics-icons'>₹</h1></div>
                                 <div className="col">
                                     <h6>8629.00</h6>
-                                    <p>Total Unpaid</p>
+                                    <small className='text-muted metrics-subhead'>Total Unpaid</small>
                                 </div>
                             </div>
                         </div>
