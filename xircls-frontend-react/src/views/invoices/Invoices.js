@@ -225,7 +225,7 @@ const Customer = (props) => {
                     <div className="row">
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><ShoppingCart size={25} color='#877ef2' style={{backgroundColor: '#efecfe'}} className='metrics-icons'/></div>
+                                <div className="col-2"><ShoppingCart size={25} color='#877ef2' style={{backgroundColor: '#efecfe'}} className='metrics-icons shopping-cart'/></div>
                                 <div className="col">
                                     <h6>0</h6>
                                     <small className='text-muted metrics-subhead'>Orders Today</small>
@@ -252,7 +252,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                         <div className="row" style={{wrap: 'noWrap'}}>
-                            <div className="col-2"><h1 className='rupee-symbol metrics-icons' style={{backgroundColor: '#fff3e7'}}>₹</h1></div>
+                            <div className="col-2"><h1 className='rupee-symbol' style={{backgroundColor: '#fff3e7', fontSize: '18px'}}>₹</h1></div>
                                 <div className="col">
                                     <h6>321407.00</h6>
                                     <small className='text-muted metrics-subhead'>Total Billing</small>
@@ -281,7 +281,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                            <div className="col-2"><h1 className='rupee-symbol metrics-icons' style={{backgroundColor: '#fff3e7'}}>₹</h1></div>
+                            <div className="col-2"><h1 className='rupee-symbol' style={{backgroundColor: '#fff3e7', fontSize: '18px'}}>₹</h1></div>
                                 <div className="col">
                                     <h6>8629.00</h6>
                                     <small className='text-muted metrics-subhead'>Total Unpaid</small>
