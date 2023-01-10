@@ -1,0 +1,81 @@
+@property --num {
+  syntax: "<integer>";
+  initial-value: 100;
+  inherits: false;
+}
+
+.div1 {
+  animation: counter 2s 1 ease-in-out;
+  counter-reset: num var(--num);
+}
+.div1::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
+}
+
+.animation-bar{
+  position: relative;
+  display: block;
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 4px;
+  line-height: 4px;
+  background: rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), 0 1px rgba(255,255,255,0.8);
+}
+
+.animation-bar span{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 4px;
+  width: 75%;
+  background-color: $blue-color;
+  background-size: 100%;
+  background-image: linear-gradient(to bottom, $blue-color, #328fe0);
+  animation: progress-bar 10s ease;
+}
+
+.animation-bar span::before{
+  position: absolute;
+  right: 30px;
+  bottom: 100%;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-width: 0;
+  border-top-color: rgba(0,0,0,0.8);
+  content: "";
+}
+.animation-bar span::after{
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 5px);
+  z-index: 1;
+  display: inline-block;
+  content: attr(data-label);
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  background-color: rgba(0,0,0,0.8);
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+@keyframes progress-bar {
+  from{
+    width: 0%;
+  }
+  to{
+    width: 75%;
+  }
+}

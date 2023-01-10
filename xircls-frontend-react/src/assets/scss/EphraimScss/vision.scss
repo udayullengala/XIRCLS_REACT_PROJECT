@@ -1,0 +1,291 @@
+.vision{
+    margin-top: 130px;
+    font-family: 'Source Sans Pro', sans-serif;
+  
+  
+    .section1{
+      margin-bottom: 9rem;
+  
+      img{
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+      }
+      h1{
+        
+        font-size: 60px;
+      }
+      h3{
+        
+        font-size: 36px;
+        
+      }
+      h1,h2,h3,h4, p, a{
+        font-weight: 100;
+      }
+      h4{
+        font-size: 25px;
+      }
+      .vertline{
+        border-left: 1px solid black;
+        height: 100px;
+       
+      }
+
+      .remove_border{
+        text-align: start;
+      }
+      .downld a{
+        color: white;
+        padding: 12px 28px;
+        background-color: #2E82CB;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+      }
+  
+      .downld a:hover{
+        cursor: pointer;
+        background-color: #282828;
+        transition: .2s ease-in-out;
+      }
+      .content-title{
+        text-align: start;
+        font-size: 48px;
+        
+      }
+      .believe{
+        
+       width: 1070px;
+      
+      }
+      .container h6{
+        font-size: 20px;
+        color: black;
+      }
+      .container h1{
+        text-align: center;
+       
+      }
+      .colimg{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      .lead{
+        text-align: start;
+      }
+      
+     .points{
+      margin-left: 12%;
+      display: flex;
+      text-align: start;
+     }
+     .points h4{
+      margin-left: 20px;
+      font-weight: 300;
+     }
+     .points span{
+      font-weight: 500;
+     }
+
+    
+     .ourculture{
+      background-color: #2e82cb;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 0;
+      
+     }
+    
+     .fbox{
+      text-align: start;
+      width: 95%;
+     }
+     .fbox h5{
+      font-weight: 300;
+      font-size: 22px;
+     }
+     .fbox h4{
+      font-weight: 300;
+      font-size: 25px;
+     }
+     .ourculturetitle{
+      text-align: center;
+      margin-top: 5rem;
+      
+     }
+     .service{
+      margin-top: 50px;
+     }
+     .ourculturetitle h2{
+      color: white;
+      font-size: 48px;
+     }
+
+     .culture h5{
+      font-size: 22px;
+      font-weight: 100;
+     }
+     .videodemo{
+      position: relative;
+     }
+     .backdropimg{
+      z-index: 1;
+      cursor:auto ;
+      width: 600px;
+      margin-top: 5rem;
+      height: auto;
+      border: 1px solid #555;
+      border-radius: 2px;
+      
+      vertical-align: middle;
+    
+     }
+     .culture{
+      width: 48%;
+      text-align: start;
+     }
+    
+     .playimg{
+      position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+cursor: pointer;
+width: 80px;
+
+     }
+     .coretext h5{
+      text-align: center;
+        font-weight: 200;
+        font-size: 22px;
+        margin-top: 1rem;
+     }
+     .coretext h4{
+      margin-top: 1rem;
+        color: #2E82CB;
+     }
+     .logo-image {
+      height: 62px;
+      width: 62px;
+      
+   }
+
+    }
+ 
+
+
+    .section2{
+      
+      @media (max-width:767px) {
+        h1{
+          font-size: 36px;
+          margin-top: 1rem;
+        }
+        .vision h2{
+          font-size: 30px;
+        }
+        .container h3{
+          font-size: 25px;
+          text-align: center;
+        }
+        .container h4{
+          font-size: 22px;
+        }
+        .transparent{
+          margin-top: 2rem;
+        }
+        
+        .vertline{
+          border: none;
+        }
+        .belivetext{
+          font-size: 30px;
+        }
+        
+        .believer{
+          display: flex;
+          flex-direction: column;
+          margin-top: 6rem;
+        }
+        .believer h6{
+          font-size: 16px;
+        }
+        .ourculturetitle{
+          text-align: start;
+          
+        }
+        .ourculturetitle h2{font-size: 30px;
+        }
+        .row{
+          display: flex;
+          flex-direction: column;
+        }
+        .row h5{
+          font-size: 18px;
+          margin-top: 1rem;
+        }
+        .fbox{
+          margin-top: 3.5rem;
+        }
+        .culture{
+          width: 100%;
+          text-align: start;
+         }
+         .playimg{
+          position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    width: 80px;
+    
+         }
+         .core{
+          margin-top: 4rem;
+         }
+        
+      }
+      @media (max-width:577px) {
+       
+          .believe{
+            width: 95%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .believe h1{
+            margin-bottom: 2rem;
+          }
+          .believe h4{
+            width: 80%;
+            font-size: 22px;
+          }
+          .contents{
+            margin-top: 3rem;
+              width: 80%;
+              align-items: center;
+              justify-content: center;
+              
+          }
+        .downld a{
+          font-size: 1rem;
+    display: inline-block;
+    
+    padding: 10px;
+    margin: 10px;
+    background-color: #2E82CB;
+    border-radius: 10px;    
+    
+    padding: 6px 18px;
+        }
+      }
+    }
+      }
