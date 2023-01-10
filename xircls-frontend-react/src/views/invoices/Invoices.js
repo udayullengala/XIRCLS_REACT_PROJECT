@@ -1,22 +1,33 @@
+/* eslint-disable no-tabs */
 import React from 'react'
 import { Card, CardBody, Button, Badge } from 'reactstrap'
-import { ChevronDown, Info, CheckCircle, Save, Settings, ShoppingCart, Box } from 'react-feather'
+import { ChevronDown, Info, CheckCircle, Save, Settings, ShoppingCart, Box, Edit, File, MoreVertical } from 'react-feather'
 import DataTable from 'react-data-table-component'
 
 // create a component for actions column
-// create show text and select input 
-// create view all button
-// create text input for search invoice
-// add filter icon
 
 const Invoices = () => {
 
-    const Actions = () => {
-        <div>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+	const Actions = () => {
+		return (
+			<div className='action-icons d-flex' >
+				<div>
+					<a href="#">
+						<File id='file-icon' style={{height: '15px'}} color='#27c66f'/>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<Edit id='edit-icon' color='#877ef2' style={{height: '15px'}}/>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<MoreVertical id='more-vertical-icon' color='#737080' style={{height: '15px'}}/>
+					</a>
+				</div>
+			</div>
+	)
 }
 
 const Customer = (props) => {
@@ -100,7 +111,7 @@ const Customer = (props) => {
             />,
             amount: '₹2400',
             status: <Unpaid />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-022',
@@ -112,7 +123,7 @@ const Customer = (props) => {
             />,
             amount: '₹2949',
             status: <Paid />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-021',
@@ -124,7 +135,7 @@ const Customer = (props) => {
             />,
             amount: '₹4720',
             status: <Paid />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-020',
@@ -136,7 +147,7 @@ const Customer = (props) => {
             />,
             amount: '₹2360',
             status: <Paid />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-019',
@@ -148,7 +159,7 @@ const Customer = (props) => {
             />,
             amount: '₹41890',
             status: <Paid />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-018',
@@ -159,7 +170,7 @@ const Customer = (props) => {
                 email='paras@leafstudios.com'/>,
             amount: '₹3548',
             status: <UnpaidAlt />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-017',
@@ -171,7 +182,7 @@ const Customer = (props) => {
             />,
             amount: '₹6020',
             status: <Paid />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-016',
@@ -182,7 +193,7 @@ const Customer = (props) => {
                 email='manasi@injawellness.com'/>,
             amount: '₹4407',
             status: <Paid />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-015',
@@ -193,7 +204,7 @@ const Customer = (props) => {
                 email='ankit.mittal@beardo.in'/>,
             amount: '₹323',
             status: <UnpaidAlt />,
-            actions: 'test'
+            actions: <Actions />
         }, 
         {
             id: 'AA-2023-014',
@@ -204,7 +215,7 @@ const Customer = (props) => {
                 email='chait.sinh@alaconcierge.com'/>,
             amount: '₹17700',
             status: <Paid />,
-            actions: 'test'
+            actions: <Actions />
         }
     ]
 
@@ -252,7 +263,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                         <div className="row" style={{wrap: 'noWrap'}}>
-                            <div className="col-2"><h1 className='rupee-symbol' style={{backgroundColor: '#fff3e7', fontSize: '18px'}}>₹</h1></div>
+                            <div className="col-2"><h1 className='rupee-symbol' style={{backgroundColor: '#fff3e7', fontSize: '25px'}}>₹</h1></div>
                                 <div className="col">
                                     <h6>321407.00</h6>
                                     <small className='text-muted metrics-subhead'>Total Billing</small>
@@ -281,7 +292,7 @@ const Customer = (props) => {
                         </div>
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                            <div className="col-2"><h1 className='rupee-symbol' style={{backgroundColor: '#fff3e7', fontSize: '18px'}}>₹</h1></div>
+                            <div className="col-2"><h1 className='rupee-symbol' style={{backgroundColor: '#fff3e7', fontSize: '25px'}}>₹</h1></div>
                                 <div className="col">
                                     <h6>8629.00</h6>
                                     <small className='text-muted metrics-subhead'>Total Unpaid</small>
@@ -317,7 +328,7 @@ const Customer = (props) => {
             </Card>
 
 
-            <DataTable 
+            <DataTable
                 responsive
                 pagination
                 title='Invoices'
