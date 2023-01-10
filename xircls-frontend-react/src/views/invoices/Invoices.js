@@ -27,18 +27,18 @@ const Invoices = () => {
 					</a>
 				</div>
 			</div>
-	)
-}
+	    )
+    }
 
-const Customer = (props) => {
-    return (
-        <div className='customer-container'>
-            <h6 className='initials'>{props.initials}</h6>{' '}
-            <h6>{props.name}</h6>
-            <small className='text-muted'>{props.email}</small>
-        </div>
-    )
-}
+    const Customer = (props) => {
+        return (
+            <div className='customer-container'>
+                <h6 className='initials'>{props.initials}</h6>{' '}
+                <h6>{props.name}</h6>
+                <small className='text-muted'>{props.email}</small>
+            </div>
+        )
+    }
     
     const UnpaidAlt = () => {
         return (
@@ -221,22 +221,21 @@ const Customer = (props) => {
 
     return (
         <div>
+            
             <Card>
                 <CardBody style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                     <h6>Invoices Dashboard</h6>
                     <Button className='add-invoice' color='primary'>Add Invoice</Button>
-                    <a href="#">
-                        <Settings color='#877ef2' className='settings-icon'/>
-                    </a>
+                    <a href="#"><Settings color='#877ef2' className='settings-icon'/></a>
                 </CardBody>
             </Card>
+
             <Card>
-                
                 <CardBody>
                     <div className="row">
                         <div className='col'>
                             <div className="row" style={{wrap: 'noWrap'}}>
-                                <div className="col-2"><ShoppingCart size={25} color='#877ef2' style={{backgroundColor: '#efecfe'}} className='metrics-icons shopping-cart'/></div>
+                                <div className="col-2 "><ShoppingCart size={25} color='#877ef2' style={{backgroundColor: '#efecfe'}} className='metrics-icons shopping-cart'/></div>
                                 <div className="col">
                                     <h6>0</h6>
                                     <small className='text-muted metrics-subhead'>Orders Today</small>
@@ -327,7 +326,6 @@ const Customer = (props) => {
                 </CardBody>
             </Card>
 
-
             <DataTable
                 responsive
                 pagination
@@ -335,256 +333,6 @@ const Customer = (props) => {
                 columns={columns}
                 data={data}
             />
-            
-            {/* <Card>
-                <CardBody>
-
-                    <div id="table-header" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems:'center', marginBottom: '1rem'}}>
-                        <div style={{display: 'inline-flex', justifyContent: 'center'}}>
-                            <p>Show</p>
-                                <select class='form-select' style={{marginLeft: '2rem', width:'70px'}}>
-                                    <option>10</option>
-                                    <option>20</option>
-                                    <option>30</option>
-                                    <option>40</option>
-                                    <option>50</option>
-                            </select>
-                            
-                        </div>
-                        <div>
-                            <h6 style={{justifyContent: 'center'}}>Invoices</h6>
-                        </div>
-                        <Button color='primary'>View All</Button>
-                    </div>
-
-                    <Table bordered hover responsive>
-                        <thead>
-                            <tr>
-                            <th>
-                                Invoice Id
-                            </th>
-                            <th>
-                                Invoice Date
-                            </th>
-                            <th>
-                                Customer
-                            </th>
-                            <th>
-                                Amount
-                            </th>
-                            <th>
-                                Status
-                            </th>
-                            <th>
-                                Actions
-                            </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-023</a>
-                            </th>
-                            <td>
-                                05-12-2022
-                            </td>
-                            <td>
-                                Nasser Hussain
-                            </td>
-                            <td>
-                                &#8377;2400
-                            </td>
-                            <td>
-                                <Info color='#ea5454'/><Badge color='danger' pill>Unpaid</Badge>
-                            </td>
-                            <td>
-                                @mdo
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-022</a>
-                            </th>
-                            <td>
-                                09-11-2022
-                            </td>
-                            <td>
-                                Rajesh Ghela
-                            </td>
-                            <td>
-                                &#8377;2949
-                            </td>
-                            <td>
-                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
-                            </td>
-                            <td>
-                                @fat
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-021</a>
-                            </th>
-                            <td>
-                                09-11-2022
-                            </td>
-                            <td>
-                                Nilesh Karnani
-                            </td>
-                            <td>
-                                &#8377;4720
-                            </td>
-                            <td>
-                                <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
-                            </td>
-                            <td>
-                                @twitter
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-020</a>
-                            </th>
-                            <td>
-                                07-11-2022
-                            </td>
-                            <td>
-                                Nikhil Chib
-                            </td>
-                            <td>
-                                &#8377;2360
-                            </td>
-                            <td>
-                                <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
-                            </td>
-                            <td>
-                                @twitter
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-019</a>
-                            </th>
-                            <td>
-                                04-11-2022
-                            </td>
-                            <td>
-                                Reshma Shelar
-                            </td>
-                            <td>
-                                &#8377;41890
-                            </td>
-                            <td>
-                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
-                            </td>
-                            <td>
-                                @twitter
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-018</a>
-                            </th>
-                            <td>
-                                14-10-2022
-                            </td>
-                            <td>
-                                Paras Batra
-                            </td>
-                            <td>
-                                &#8377;3548
-                            </td>
-                            <td>
-                                <Save color='#8d83f2'/><Badge color='primary' pill>Unpaid</Badge>
-                            </td>
-                            <td>
-                                @twitter
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-017</a>
-                            </th>
-                            <td>
-                                11-10-2022
-                            </td>
-                            <td>
-                                Nasser Hussain
-                            </td>
-                            <td>
-                                &#8377;6020
-                            </td>
-                            <td>
-                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
-                            </td>
-                            <td>
-                                @twitter
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-016</a>
-                            </th>
-                            <td>
-                                17-10-2022
-                            </td>
-                            <td>
-                                Manasi Sheth
-                            </td>
-                            <td>
-                                &#8377;4407
-                            </td>
-                            <td>
-                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
-                            </td>
-                            <td>
-                                @twitter
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-015</a>
-                            </th>
-                            <td>
-                                17-10-2022
-                            </td>
-                            <td>
-                                Ankit Mittal
-                            </td>
-                            <td>
-                                &#8377;323
-                            </td>
-                            <td>
-                            <Save color='#8d83f2'/><Badge color='primary' pill>Unpaid</Badge>
-                            </td>
-                            <td>
-                                @twitter
-                            </td>
-                            </tr>
-                            <tr>
-                            <th scope="row">
-                                <a href="#">AA-2023-014</a>
-                            </th>
-                            <td>
-                                18-09-2022
-                            </td>
-                            <td>
-                                Chaitanya Sinh
-                            </td>
-                            <td>
-                                &#8377;17700
-                            </td>
-                            <td>
-                            <CheckCircle color='#81dca9'/><Badge color='success' pill>Paid</Badge>
-                            </td>
-                            <td>
-                                @twitter
-                            </td>
-                            </tr>
-                        </tbody>
-                        </Table>
-                </CardBody>
-            </Card> */}
 
         </div>
     )
