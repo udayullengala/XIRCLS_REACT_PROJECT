@@ -2,7 +2,7 @@ import React from 'react'
 import { Paperclip, Trash } from 'react-feather'
 import { Row, Col, Container, Card, CardBody } from 'reactstrap'
 import OfferCampaign from './OfferCampaign'
-
+import "../../Css/OfferAcquisition.css"
 const OfferAcquisition = () => {
 
     return (
@@ -75,7 +75,7 @@ const OfferAcquisition = () => {
                                             <h5>Upload Offer Image</h5>
                                             <p className='fs-6 mb-2'>640px X 325px PNG/JPEG/GIF Format</p>
                                             <h6>Offer 1</h6>
-                                            <div className='d-flex align-items-center' style={{ gap: '2rem' }}>
+                                            <div className='box d-flex align-items-center' style={{ gap: '2rem' }}>
                                                 <div className='cursor-pointer form-check'>
                                                     <img width='50px' src="https://www.xircls.com/static/images/website-slide/logo12.jpg" alt="logo" />
                                                 </div>
@@ -147,7 +147,7 @@ const OfferAcquisition = () => {
                                             <h5>Upload Offer Image</h5>
                                             <p className='fs-6 mb-2'>640px X 325px PNG/JPEG/GIF Format</p>
                                             <h6>Offer 2</h6>
-                                            <div className='d-flex align-items-center' style={{ gap: '2rem' }}>
+                                            <div className='box d-flex align-items-center' style={{ gap: '2rem' }}>
                                                 <div className='cursor-pointer form-check'>
                                                     <img width='50px' src="https://www.xircls.com/static/images/website-slide/logo12.jpg" alt="logo" />
                                                 </div>
@@ -161,10 +161,10 @@ const OfferAcquisition = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Container>
-                                <Row className="px-1 my-2">
-                                    <Col s={6}><button className="btn btn-primary rounded-2">Back</button></Col>
-                                    <Col s={6} className='text-end'><button className="btn btn-primary rounded-2 mx-2">Save</button><button className="btn btn-primary rounded-2">Save & Proceed</button></Col>
+                            <Container className='btncontainer'>
+                                <Row className="boxbtn px-1 my-2">
+                                    <Col s={6} className="boxbtn1"><button className="btn1 btn btn-primary rounded-2">Back</button></Col>
+                                    <Col s={6} className='btnx2 text-end'><button className="btn2 btn btn-primary rounded-2 mx-2">Save</button><button className="btn3 btn btn-primary rounded-2">Save & Proceed</button></Col>
                                 </Row>
                             </Container>
                         </Container>

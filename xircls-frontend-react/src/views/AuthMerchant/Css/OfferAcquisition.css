@@ -1,0 +1,69 @@
+@media (min-width : 580px) and (max-width: 767px) {
+.btnx2{
+    display: flex;
+    flex-direction: row;
+    
+}
+.btnx2 .btn2{
+    width: 150px;
+}
+}
+@media (min-width : 400px) and (max-width: 580px) {
+    .btncontainer{
+    margin-left: 100px;
+    }
+    .btn1{
+        margin-left: 20px;
+    }
+    .btn2, .btn3{margin-top: 5px;}
+    .btnx2 .btn3{
+        width: 150px;
+        margin-left: -20px;
+    }
+    }
+    @media (min-width : 340px) and (max-width: 400px) {
+        .btncontainer{
+        margin-left: 50px;
+        }
+        .boxbtn1 button{
+            display: inline-block !important;
+            margin-left: 20px;
+            
+        }
+        .btn2, .btn3{margin-top: 5px;}
+        .btnx2 .btn3{
+            width: 150px;
+            margin-left: -20px;
+        }
+        }
+        @media (min-width : 300px) and (max-width: 340px) {
+            .btncontainer{
+            margin-left: 25px;
+            }
+            .boxbtn1 button{
+                display: inline-block !important;
+                margin-left: 20px;
+                
+            }
+            .btn2, .btn3{margin-top: 5px;}
+            .btnx2 .btn3{
+                width: 150px;
+                margin-left: -20px;
+            }
+            }
+@media (min-width : 340px) and (max-width: 385px) {
+.box{
+    margin-left: -30px;
+}
+.btn{
+    margin-left: -20px;
+}
+}
+@media (min-width : 300px) and (max-width: 340px) {
+    .box{
+        margin-left: -40px;
+    }
+    .btn{
+        margin-left: -23px;
+    }
+    }

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Container, Row, Col, Card, CardBody } from 'reactstrap'
 import { Plus, X } from "react-feather"
 import OfferCampaign from "./OfferCampaign"
-
+import '../../Css/OfferValue.css'
 const OfferValue = () => {
 
     const [container, setContainer] = useState('false')
@@ -111,8 +111,8 @@ const OfferValue = () => {
                                         <Col s={6} className='d-flex align-items-center'>
                                             <h3 className="mb-0">Retention Offers</h3>
                                         </Col>
-                                        <Col s={6} className='text-end'>
-                                            <button className="btn btn-primary rounded-2 mx-2">Recommended Values</button><button className="btn btn-primary rounded-2">Reset</button>
+                                        <Col s={6} className='btnbox text-end'>
+                                            <button className=" btn btn-primary rounded-2 mx-2">Recommended Values</button><button className="btn btn-primary rounded-2">Reset</button>
                                         </Col>
                                     </Row>
                                     <Row className="py-1 border-top border-bottom">
@@ -146,10 +146,10 @@ const OfferValue = () => {
                                 </div>
                             </Container>
                         </Container>
-                        <Container>
-                            <Row className="px-1 my-2">
-                                <Col s={6}><button className="btn btn-primary rounded-2">Back</button></Col>
-                                <Col s={6} className='text-end'><button className="btn btn-primary rounded-2 mx-2">Save</button><button className="btn btn-primary rounded-2">Save & Proceed</button></Col>
+                        <Container className="containerbox">
+                            <Row className="rowbox px-1 my-2">
+                                <Col s={6} className='colbox'><button className="btn btn-primary rounded-2">Back</button></Col>
+                                <Col s={6} className='colbox2 text-end'><button className="btn btn-primary rounded-2 mx-2">Save</button><button className="btn btn-primary rounded-2">Save & Proceed</button></Col>
                             </Row>
                         </Container>
                     </CardBody>

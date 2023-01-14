@@ -1,0 +1,140 @@
+@media (min-width : 570px) and (max-width: 767px) {
+    .containerbox{
+        min-width: 500px;
+        display: flex;
+        margin: 0 auto !important;
+        justify-content: center;
+        position: relative;
+        justify-items: center;
+    }
+    .rowbox{
+       
+        display: flex;
+        flex-direction: row;
+      
+    }
+    .colbox{
+        margin: 0 !important;
+    }
+    .colbox2{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto !important;
+    }
+    .colbox2 button{
+        padding: 5px  20px;
+    }
+}
+
+@media (min-width : 490px) and (max-width: 570px) {
+    .containerbox{
+        min-width: 500px;
+        display: flex;
+        margin: 0 auto !important;
+        justify-content: center;
+        position: relative;
+        justify-items: center;
+    }
+    .rowbox{
+       
+        display: flex;
+        flex-direction: row;
+      
+    }
+    .colbox{
+        margin-left: -60px;
+    }
+    .colbox2{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto !important;
+    }
+    .colbox2 button{
+        padding: 5px  20px;
+    }
+}
+@media (min-width : 430px) and (max-width: 490px) {
+    .containerbox{
+        min-width: 500px;
+        display: flex;
+        margin: 0 auto !important;
+        justify-content: center;
+        position: relative;
+        justify-items: center;
+    }
+    .rowbox{
+       
+        display: flex;
+        flex-direction: row;
+      
+    }
+    .colbox{
+        margin-left: -120px;
+    }
+    .colbox2{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto !important;
+    }
+    .colbox2 button{
+        padding: 5px  20px;
+    }
+}
+@media (min-width : 385px) and (max-width: 430px) {
+    .containerbox{
+        min-width: 500px;
+        display: flex;
+        margin: 0 auto !important;
+        justify-content: center;
+        position: relative;
+        justify-items: center;
+    }
+    .rowbox{
+       
+        display: flex;
+        flex-direction: row;
+      
+    }
+    .colbox{
+        margin-left: -170px;
+    }
+    .colbox2{
+        display: flex;
+        flex-direction: row;
+        margin-left: -80px;
+       
+    }
+    .colbox2 button{
+        padding: 5px  20px;
+    }
+}
+@media (min-width : 300px) and (max-width: 385px) {
+    .containerbox{
+        min-width: 350px;
+        display: flex;
+        margin: 0 auto !important;
+        justify-content: center;
+        position: relative;
+        justify-items: center;
+    }
+    .rowbox{
+       
+        display: flex;
+        flex-direction: row;
+      
+    }
+    .colbox{
+        margin-left: -120px;
+    }
+    .colbox2{
+        display: flex;
+        flex-direction: row;
+        margin-left: -90px;
+       
+    }
+    .colbox2 button{
+        padding: 5px  20px;
+        margin-left: -10px;
+        width: 95px;
+    }
+}

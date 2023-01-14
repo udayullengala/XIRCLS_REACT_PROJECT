@@ -92,10 +92,10 @@ const OfferAction = () => {
                             </Row>
 
                         </Container>
-                        <Container>
-                            <Row className="px-1 my-2">
-                                <Col s={6}><button className="btn btn-primary rounded-2">Back</button></Col>
-                                <Col s={6} className='text-end'><button className="btn btn-primary rounded-2 mx-2">Save</button><button className="btn btn-primary rounded-2">Save & Proceed</button></Col>
+                        <Container className='btncontainer'>
+                            <Row className="boxbtn px-1 my-2">
+                                <Col s={6} className="boxbtn1"><button className="btn1 btn btn-primary rounded-2">Back</button></Col>
+                                <Col s={6} className='btnx2 text-end'><button className="btn2 btn btn-primary rounded-2 mx-2">Save</button><button className="btn3 btn btn-primary rounded-2">Save & Proceed</button></Col>
                             </Row>
                         </Container>
                     </CardBody>
