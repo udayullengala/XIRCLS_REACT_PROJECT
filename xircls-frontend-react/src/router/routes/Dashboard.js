@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import Demo from '../../views/dashboard/Demo'
+import EmailSetup from '../../views/dashboard/EmailSetup'
 const Dashboard = lazy(() => import('../../views/dashboard/Dashboard'))
 
 
@@ -9,8 +9,8 @@ const Dashboard_Routes = [
     element: <Dashboard />
   },
   {
-    path: '/merchant/demo/',
-    element: <Demo />
+    path: '/merchant/EmailSetup',
+    element: <EmailSetup />
   }
 ]
 
