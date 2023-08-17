@@ -1,0 +1,28 @@
+.ResultPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-weight: normal;
+}
+  
+.email {
+  height: 180px;
+  width: 250px;
+  margin: auto;
+  display: block;
+}
